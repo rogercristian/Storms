@@ -1,6 +1,8 @@
 # Storms
 Este é um protótipo baseado em uma campanha de RPG. Objetivo principal é utilizar INK (Uma linguagem de storyteller) para criar os dialogos do Game, no melhor estilo retrô.
 
+![SharedScreenshot](https://user-images.githubusercontent.com/19762039/177382854-ea7e3690-3b0d-4e5e-bb81-e771ceb78f83.jpg)
+
 ### Personagens:
 
 #### Inventor
