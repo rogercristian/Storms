@@ -1,0 +1,1 @@
+VAR nome_cor = ""

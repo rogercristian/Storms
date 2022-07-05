@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 36
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Default
+    m_Hash: 753088835
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: light
+      m_Hash: 1796889847
+      m_Sprite: {fileID: 6968229223337411903, guid: a3d4bc5cfa17a254f987ca3f88bdfdef, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6968229223337411903, guid: a3d4bc5cfa17a254f987ca3f88bdfdef, type: 3}
+    - m_Name: deep
+      m_Hash: -1819060131
+      m_Sprite: {fileID: 5077321724578115663, guid: 3e87ca527365e18449e5f71216691944, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5077321724578115663, guid: 3e87ca527365e18449e5f71216691944, type: 3}
+    - m_Name: crimson
+      m_Hash: 577696272
+      m_Sprite: {fileID: 4856509117592187585, guid: 677c1fff27505a7479df49515fc6b1c2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4856509117592187585, guid: 677c1fff27505a7479df49515fc6b1c2, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  m_PrimaryLibraryGUID: bebecabbc41dc8944b0693647aba5332
