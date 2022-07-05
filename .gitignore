@@ -2,6 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/Prototype Alpha/Library/PackageCache/com.unity.burst@1.6.5/.Runtime/hostmac/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
