@@ -5,7 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using System;
 using UnityEngine.EventSystems;
-using Ink.UnityIntegration;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,11 +13,14 @@ public class DialogueManager : MonoBehaviour
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
 
+    [Header("Load Globals JSON")]
+    [SerializeField] private TextAsset loadGlobalsJSON;
+
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
 
-    [Header("Global Ink FIle")]
-    [SerializeField] private InkFile globalsInkFile;
+  /*  [Header("Global Ink FIle")]
+    [SerializeField] private InkFile globalsInkFile;*/
 
     [SerializeField] private GameObject continueIcon;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -52,7 +55,7 @@ public class DialogueManager : MonoBehaviour
         }
         instance = this;
 
-        dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
+        dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     }
 
     public static DialogueManager GetInstance()

@@ -8,17 +8,21 @@ public class DialogueVariables
 {
     public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
 
-    public DialogueVariables (string globalsFilepath)
+ //   public DialogueVariables (string globalsFilepath)
+    public DialogueVariables (TextAsset loadGlobalsJSON)
+
     {
         //compila Story
-        string inkFileContents = File.ReadAllText(globalsFilepath);
-        Ink.Compiler compiler = new Ink.Compiler(inkFileContents);
-        Story globalsVariableStory = compiler.Compile();
+       // string inkFileContents = File.ReadAllText(globalsFilepath);
+     //   Ink.Compiler compiler = new Ink.Compiler(inkFileContents);
+       // Story globalsVariableStory = compiler.Compile();
+        Story globalsVariableStory = new Story(loadGlobalsJSON.text);
 
         // incializa Story
 
         variables = new Dictionary<string, Ink.Runtime.Object>();
         foreach(string name in globalsVariableStory.variablesState)
+
         {
             Ink.Runtime.Object value = globalsVariableStory.variablesState.GetVariableWithName(name);
             variables.Add(name, value);
