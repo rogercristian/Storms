@@ -6,7 +6,8 @@ Este é um protótipo baseado em uma campanha de RPG. Objetivo principal é util
 
 #### 📺 2D (2.5D - Sprite) 
 
-![Prototype-Alpha---MudVillage_Neo_Iguassu-](https://user-images.githubusercontent.com/19762039/177673598-a09a1ac9-d31f-4b11-b175-93cd254d6d25.gif)
+![Prototype-Alpha---MudVillage_Neo_Iguassu-](https://user-images.githubusercontent.com/19762039/177673598-a09a1ac9-d31f-4b11-b175-93cd254d6d25.gif)    ![Prototype-Alpha---MudVillage_Neo_Iguassu2-](https://user-images.githubusercontent.com/19762039/177674030-93811c48-ebd0-46e9-a1ae-b80afd17194f.gif)
+
 
 
 ![SharedScreenshot](https://user-images.githubusercontent.com/19762039/177382854-ea7e3690-3b0d-4e5e-bb81-e771ceb78f83.jpg)
