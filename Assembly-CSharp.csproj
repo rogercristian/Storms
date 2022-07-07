@@ -66,6 +66,7 @@
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
     <Compile Include="Assets\Scripts\Input\InputManager.cs" />
+    <Compile Include="Assets\Scripts\InitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

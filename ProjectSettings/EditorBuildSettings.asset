@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/load_test.unity
+    guid: 439044d481fcc2c42b2b17b1ac06a1ec
+  - enabled: 1
+    path: Assets/Scenes/MudVillage_Neo_Iguassu.unity
+    guid: 2ee5fb2724a819f42bd9d685c73bf5bf
   m_configObjects: {}
