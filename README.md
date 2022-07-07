@@ -26,6 +26,6 @@ Este é um protótipo baseado em uma campanha de RPG. Objetivo principal é util
 
 ### Cenário:
 
-#### Cabana Villa Interior (Chão de lama)
+#### Cabana Vila Interior (Chão de lama)
 
 ![Cabana_256](https://user-images.githubusercontent.com/19762039/177381492-4fad068f-0f60-4c8a-8bec-029b57255d23.png)
