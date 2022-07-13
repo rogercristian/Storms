@@ -30,7 +30,4 @@ Este é um protótipo baseado em uma campanha de RPG. Objetivo principal é util
 
 ![Cabana_256](https://user-images.githubusercontent.com/19762039/177381492-4fad068f-0f60-4c8a-8bec-029b57255d23.png)
 
-#### Atualizando perspectiva 2.5D
-
-![SharedScreenshot](https://user-images.githubusercontent.com/19762039/178851528-c34cd3ff-93ee-4138-8960-e71e2b86fcfb.jpg)    <br/> <br/> <br/>    ![SharedScreenshot2](https://user-images.githubusercontent.com/19762039/178851544-6821db2c-a866-4a99-b14e-52e1fd1b8265.jpg)
 
