@@ -17,6 +17,7 @@ public class DialogueTrigger : MonoBehaviour
     }
     private void Update()
     {
+        //Inicia o Dialogo se o player estiver perto do NPC
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
             visualCue.SetActive(true);

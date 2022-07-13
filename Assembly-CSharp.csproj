@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Input\Control.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\InitTest.cs" />
     <Compile Include="Assets\Scripts\TestNPC.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueVariables.cs" />
     <Compile Include="Assets\Scripts\Player\MovementController.cs" />
@@ -66,7 +67,6 @@
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
     <Compile Include="Assets\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
     <Compile Include="Assets\Scripts\Input\InputManager.cs" />
-    <Compile Include="Assets\Scripts\InitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
