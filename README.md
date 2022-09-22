@@ -1,5 +1,5 @@
 # Storms
-Este é um protótipo baseado em uma campanha de RPG. Objetivo principal é utilizar INK (Uma linguagem de storyteller) para criar os dialogos do Game, no melhor estilo retrô.
+Este é um protótipo baseado em uma campanha de RPG. Objetivo principal é utilizar <a href="https://www.inklestudios.com/ink/" target="_blank" rel="noopener noreferrer">INK</a> (Uma linguagem de storyteller) para criar os dialogos do Game, no melhor estilo retrô.
 
 
 ### 🛠 Engine: Unity3D
