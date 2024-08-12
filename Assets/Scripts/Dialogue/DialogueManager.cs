@@ -1,15 +1,14 @@
+using Ink.Runtime;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using Ink.Runtime;
-using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 
 public class DialogueManager : MonoBehaviour
 {
-  
+
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
 
@@ -19,8 +18,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
 
-  /*  [Header("Global Ink FIle")]
-    [SerializeField] private InkFile globalsInkFile;*/
+    /*  [Header("Global Ink FIle")]
+      [SerializeField] private InkFile globalsInkFile;*/
 
     [SerializeField] private GameObject continueIcon;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -49,7 +48,7 @@ public class DialogueManager : MonoBehaviour
     private DialogueVariables dialogueVariables;
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Debug.Log("Acha mais de um Dialogue na Cena");
         }
@@ -69,7 +68,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
 
         //get layoutanimator
-        layoutAnimator =dialoguePanel.GetComponent<Animator>();
+        layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
@@ -86,7 +85,7 @@ public class DialogueManager : MonoBehaviour
         {
             return;
         }
-        if( canContinueNextLine &&
+        if (canContinueNextLine &&
             currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetInteractPressed())
         {
             ContinueStory();
@@ -123,25 +122,25 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            if(displayLineCoroutine != null)
+            if (displayLineCoroutine != null)
             {
                 StopCoroutine(displayLineCoroutine);
             }
-           displayLineCoroutine= StartCoroutine(DisplayLine(currentStory.Continue()));
+            displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
 
-           
+
 
             HandleTags(currentStory.currentTags);
         }
         else
         {
-          StartCoroutine(ExitDialogueMode());
+            StartCoroutine(ExitDialogueMode());
 
         }
 
     }
 
-    private IEnumerator DisplayLine (string line)
+    private IEnumerator DisplayLine(string line)
     {
         // texto vazio
         dialogueText.text = "";
@@ -152,7 +151,7 @@ public class DialogueManager : MonoBehaviour
         canContinueNextLine = false;
 
 
-        foreach (char letter in line.ToCharArray())        
+        foreach (char letter in line.ToCharArray())
         {
 
             if (InputManager.GetInstance().GetSubmitPressed())
@@ -161,11 +160,11 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
 
-            if(letter == '<' || isAddRichText)
+            if (letter == '<' || isAddRichText)
             {
                 isAddRichText = true;
                 dialogueText.text += letter;
-                if(letter == '>')
+                if (letter == '>')
                 {
                     isAddRichText = false;
                 }
@@ -175,7 +174,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueText.text += letter;
                 yield return new WaitForSeconds(typingSpeed);
             }
-            
+
         }
 
         continueIcon.SetActive(true);
@@ -195,10 +194,10 @@ public class DialogueManager : MonoBehaviour
 
     private void HandleTags(List<string> currentTags)
     {
-        foreach(string tag in currentTags)
+        foreach (string tag in currentTags)
         {
             string[] splitTag = tag.Split(":");
-            if(splitTag.Length != 2)
+            if (splitTag.Length != 2)
             {
                 Debug.LogError("não pode ter menos que 2" + tag);
             }
@@ -229,7 +228,7 @@ public class DialogueManager : MonoBehaviour
     {
         List<Choice> currentChoices = currentStory.currentChoices;
 
-        if(currentChoices.Count > choices.Length)
+        if (currentChoices.Count > choices.Length)
         {
             Debug.LogError("Numero de escolha maior que o permitido na UI" + currentChoices);
         }
@@ -265,7 +264,7 @@ public class DialogueManager : MonoBehaviour
             InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
         }
-        
+
     }
 
     public Ink.Runtime.Object GetVariableState(string variableName)
